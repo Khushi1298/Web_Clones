@@ -14,3 +14,6 @@ main .box{
     position: absolute;
     top: 0;
 }
+nav {
+    background-color: red;
+} 
