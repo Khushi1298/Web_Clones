@@ -1,19 +1,82 @@
-*{
-    margin: 0;
-    padding: 0;
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
 }
-main{
-    background-image: url("images/background.jpg");
-    height: 80vh;
+body {
+  background-color: black;
 }
-main .box{
-    background-color: black;
-    height: 80vh;
-    width: 100%;
-    opacity: 0.3;
-    position: absolute;
-    top: 0;
+.main {
+  background-image: url("images/background.jpg");
+  background-position: center center;
+  background-size: max(1200px, 100vw);
+  background-repeat: no-repeat;
+  height: 644px;
+}
+main .box {
+  background-color: black;
+  height: 80vh;
+  width: 100%;
+  opacity: 0.74;
+  position: absolute;
+  top: 0;
 }
 nav {
-    background-color: red;
-} 
+  max-width: 70vw;
+  justify-content: space-between;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  height: 62px;
+}
+nav img {
+  color: red;
+  width: 110px;
+  position: relative;
+  z-index: 10;
+}
+nav button {
+  position: relative;
+  z-index: 10;
+}
+.login {
+  background-color: red;
+  border: none;
+  margin: 2px;
+  padding: 5px;
+  color: white;
+  border-radius: 3px;
+}
+.center {
+  color: white;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding:0 30px;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  gap: 20px;
+  font-family: "Martel Sans", sans-serif;
+}
+.center > :nth-child(1) {
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+  font-size: 48px;
+  text-align: center;
+}
+.center > :nth-child(2) {
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+}
+.center > :nth-child(3) {
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+}
+.seprate{
+    height: 10px;
+    background-color: rgb(48, 46, 46);
+}
