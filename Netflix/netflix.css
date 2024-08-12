@@ -11,14 +11,15 @@ body {
   background-image: url("images/background.jpg");
   background-position: center center;
   background-size: max(1200px, 100vw);
+  position: relative;
   background-repeat: no-repeat;
   height: 644px;
 }
-main .box {
+.main .box {
   background-color: black;
-  height: 80vh;
+  height: 644px;
   width: 100%;
-  opacity: 0.74;
+  opacity: 0.70;
   position: absolute;
   top: 0;
 }
@@ -28,11 +29,11 @@ nav {
   margin: auto;
   display: flex;
   align-items: center;
-  height: 62px;
+  height: 100px;
 }
 nav img {
   color: red;
-  width: 110px;
+  width: 120px;
   position: relative;
   z-index: 10;
 }
@@ -40,17 +41,9 @@ nav button {
   position: relative;
   z-index: 10;
 }
-.login {
-  background-color: red;
-  border: none;
-  margin: 2px;
-  padding: 5px;
-  color: white;
-  border-radius: 3px;
-}
 .center {
   color: white;
-  height: 100%;
+  height: calc(100% - 100px);
   display: flex;
   align-items: center;
   padding:0 30px;
@@ -77,6 +70,88 @@ nav button {
   text-align: center;
 }
 .seprate{
-    height: 10px;
+    height: 7px;
     background-color: rgb(48, 46, 46);
+    position: relative;
+    z-index: 20;
 }
+.btn{
+  padding:3px 8px;
+  font-weight: bold;
+  font-weight: 400;
+  background-color: rgba(248,243,243,0.0021);
+  color: white;
+  border: 1px solid white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.main input{
+  background-color: rgba(23,23,23,0.8);
+  padding: 3px 24px;
+  font-size: 20px;
+  color: white;
+  border-radius: 4px;
+  border: 1px solid rgba(23,23,23,0.5);
+}
+.btn-log{
+  background-color: red;
+  color: white;
+}
+.btn-red{
+  background-color: red;
+  color: white;
+  padding: 3px 24px;
+  font-size: 20px;
+  border-radius: 4px;
+  font-weight: 400;
+}
+.cen-btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+.main input{
+  padding: 7px 101px 8px 14px;
+  font-size: 12px;
+  color: white;
+  font-weight: 900;
+  background-color: rgba(23,23,23,0.8);
+  border: 1px solid rgba(246,238,238,0.5);
+}
+.first{
+  display: flex;
+  justify-content: center;
+  color: white;
+  max-width: 70vw;
+  margin: auto;
+  align-items: center;
+}
+.img{
+  position: relative;
+}
+.img img{
+  position: relative;
+  width: 500px;
+  z-index: 10;
+}
+.img video{
+  position: absolute;
+  top: 51px;
+  right: 0;
+  width: 500px;
+}
+section.first>div {
+  display: flex;
+  flex-direction: column;
+  padding: 34px 0;
+}
+section.first>div :nth-child(1) {
+  font-size: 50px;
+  font-weight: bolder;
+}
+section.first>div :nth-child(2) {
+  font-size: 25px;
+  padding-top: 20px;
+}
+
